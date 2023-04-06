@@ -7,6 +7,21 @@ return {
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
+    guicursor = "i-ci:block-iCursor-blinkwait300-blinkon200-blinkoff150",
+    cursorline = true, -- 光標所在行加底線
+    incsearch = true, -- "在搜尋還沒輸入完畢前，畫面就會跟着顯示
+    hlsearch = true, -- highlight on search
+    cursorcolumn = true,
+    showcmd = true,
+    -- utf8
+    encoding = "UTF-8",
+    fileencoding = "utf-8",
+    -- 移动时，在光標周围保留8行距離
+    scrolloff = 8,
+    sidescrolloff = 8,
+    --   Case insensitive searching UNLESS /C or capital in search
+    ignorecase = true,
+    smartcase = true, -- "只要有大寫就表示有大小寫差別
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
