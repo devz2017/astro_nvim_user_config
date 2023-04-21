@@ -11,6 +11,22 @@ return {
   --   end,
   -- },
   {
+    "folke/trouble.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    opts = {},
+  },
+  {
+    "kylechui/nvim-surround",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    opts = {}, -- same below config
+    -- config = function()
+    -- require("nvim-surround").setup {
+    -- Configuration here, or leave empty to use defaults
+    -- }
+    -- end,
+  },
+  {
     "folke/todo-comments.nvim",
     dependencies = "nvim-lua/plenary.nvim",
     opts = {},
@@ -19,5 +35,11 @@ return {
     keys = {
       { "<leader>T", "<cmd>TodoTelescope<cr>", desc = "Open Todos in TeleScope" },
     },
+  },
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
   },
 }

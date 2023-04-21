@@ -2,12 +2,13 @@
 return {
   opt = {
     -- set to true or false etc.
-    relativenumber = true, -- sets vim.opt.relativenumber
+    -- relativenumber = true, -- sets vim.opt.relativenumber
     number = true, -- sets vim.opt.number
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
-    guicursor = "i-ci:ver60-iCursor-blinkwait300-blinkon200-blinkoff150",
+    -- mode_group:action,mode_group:action     block or ver60
+    guicursor = "n-c-v:block-nCursor,i-ci:block-iCursor-blinkon25-blinkoff25",
     cursorline = true, -- 光標所在行加底線
     incsearch = true, -- "在搜尋還沒輸入完畢前，畫面就會跟着顯示
     hlsearch = true, -- highlight on search
