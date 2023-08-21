@@ -1,0 +1,120 @@
+{
+  "py": {
+    "prefix": "py script",
+    "body": "#! /home/ein/.local/bin/a3"
+  },   
+  "if __name__": {
+    "prefix": "if __name__",
+    "body": "if __name__ == '__main__':\n    $1"
+  },
+  "df.to_csv": {
+    "prefix": "df.to_csv",
+    "body": [
+      "df.to_csv('t.txt',index=False)",
+      "$1"
+    ],
+    "description": "save df into csv"
+  },
+  
+  "print": {
+    "prefix": "pp",
+    "body": [
+      "print($1)"
+    ],
+    "description": "print"
+  },
+  "build function": {
+    "prefix": "f",
+    "body": [
+      "def $1($2) -> $3:",
+      "    ${4:pass}"
+    ]
+  },
+  "main": {
+    "prefix": "main",
+    "body": [
+      "def main():",
+      "    ${1:...}",
+      "\n",
+      "if __name__ == \"__main__\":",
+      "    main()"
+    ],
+    "description": "__main__ entry point"
+  },
+  "headers": {
+    "prefix": "headers",
+    "body": [
+      "headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:87.0) Gecko/20100101 Firefox/99.0'}"
+    ],
+    "description": "http headers"
+  },
+  "sockettcp": {
+    "prefix": "sockettcp",
+    "body": [
+      "socket.socket(socket.AF_INET, socket.SOCK_STREAM)"
+    ],
+  },
+  "py_script": {
+    "prefix": "py script",
+    "body": [
+      "#! /home/ein/.local/bin/a3\n$1"
+    ],
+    "description": "py_script"
+  },
+  "import scraper": {
+    "prefix": "import scraper",
+    "body": [
+      "import requests",
+      "import requests_html",
+      "from bs4 import BeautifulSoup as bs",
+      "from selenium import webdriver"
+    ]
+  },
+  "import ds": {
+    "prefix": "import ds",
+    "body": [
+      "import numpy as np",
+      "import pandas as pd",
+      "import matplotlib.pyplot as plt",
+      "plt.rcParams[\"font.sans-serif\"] = \"Noto Sans CJK JP\"",
+      "%matplotlib inline",
+      "$0"
+    ],
+    "description": "import datas lib"
+  },
+  "gragh style choose": {
+    "prefix": "gragh style choose",
+    "body": [
+      "def f(c=plt.style.available):",
+      "    plt.style.use(c)",
+      "    plt.rcParams['font.sans-serif'] = 'Noto Sans CJK JP'",
+      "interact(f);",
+    ],
+  },
+  "import selenium": {
+    "prefix":"import selenium",
+    "body":[
+      "from selenium import webdriver",
+      "from selenium.webdriver.firefox.service import Service",
+      "from selenium.webdriver.firefox.options import Options",
+      "from selenium.webdriver.common.by import By",
+      "import os\n",
+
+      "dr = os.environ['driver']",
+      "driver = webdriver.Firefox(service=Service(dr)\n",
+      "driver.get(${1:'https://www.duckduckgo.com'})"
+    ]
+  },
+  "matplotlib": {
+		"prefix": "s matplotlib",
+		"body": [
+			"plt.legend(loc='upper left')",  // loc=位置
+			"plt.title()",
+			"plt.xlabel()",
+			"plt.ylabel()",
+			"plt.tight_layout()",
+			"plt.show()"
+		]
+	}
+}
+

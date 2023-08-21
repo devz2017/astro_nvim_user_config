@@ -7,8 +7,9 @@ return {
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
-    -- mode_group:action,mode_group:action     block or ver60
-    guicursor = "n-c-v:block-nCursor,i-ci:block-iCursor-blinkon25-blinkoff25",
+    guicursor = "n-c-v:block-nCursor,i-ci:ver50-Cursor-blinkon25-blinkoff25",
+    -- guicursor = "n-v-c-sm:block-nCursor,i-ci-ve:ver25-Cursor,r-cr-o:hor20",
+    -- guifont,
     cursorline = true, -- 光標所在行加底線
     incsearch = true, -- "在搜尋還沒輸入完畢前，畫面就會跟着顯示
     hlsearch = true, -- highlight on search

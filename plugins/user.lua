@@ -9,7 +9,12 @@ return {
   --   config = function()
   --     require("lsp_signature").setup()
   --   end,
-  -- },
+  -- opts = {}, -- same below config
+  -- config = function()
+  --  require("nvim-surround").setup {
+  --  Configuration here, or leave empty to use defaults
+  -- end,
+  -- }
   {
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -19,12 +24,7 @@ return {
     "kylechui/nvim-surround",
     version = "*", -- Use for stability; omit to use `main` branch for the latest features
     event = "VeryLazy",
-    opts = {}, -- same below config
-    -- config = function()
-    -- require("nvim-surround").setup {
-    -- Configuration here, or leave empty to use defaults
-    -- }
-    -- end,
+    opts = {},
   },
   {
     "folke/todo-comments.nvim",
