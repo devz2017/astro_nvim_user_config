@@ -22,7 +22,14 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
-    ["<M-m>"] = { ":q<cr>" },
+    --
+    -- my
+    ["<M-m>"] = { ":q<cr>" }, -- M means Alt
+    ["M"] = { ":Mason<cr>" },
+    ["<leader>m"] = { ":Telescope marks<cr>", desc = "select marks" },
+    ["<S-Tab>"] = { ":bprev<CR>", desc = "backward file", noremap = true },
+    ["<Tab>"] = { ":bnext<CR>", desc = "forward file", noremap = true },
+    ["<M-b>"] = { ":Telescope buffers<CR>", desc = "Telescope buffers" },
   },
   t = {
     -- setting a mapping to false will disable it

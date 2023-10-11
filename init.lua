@@ -1,5 +1,4 @@
 return {
-  -- Configure snippets
   plugins = {
     {
       "L3MON4D3/LuaSnip",
@@ -16,6 +15,7 @@ return {
       end,
     },
   },
+
   -- Configure AstroNvim updates
   updater = {
     remote = "origin", -- remote to use

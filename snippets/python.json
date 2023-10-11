@@ -108,7 +108,7 @@
   "matplotlib": {
 		"prefix": "s matplotlib",
 		"body": [
-			"plt.legend(loc='upper left')",  // loc=位置
+			"plt.legend(loc='upper left')",
 			"plt.title()",
 			"plt.xlabel()",
 			"plt.ylabel()",
