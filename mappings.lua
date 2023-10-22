@@ -24,12 +24,15 @@ return {
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     --
     -- my
-    ["<M-m>"] = { ":q<cr>" }, -- M means Alt
+    ["<M-d>"] = { ":%s/&& echo/# &/<CR>", desc = "comment debug message" },
+    ["<M-f>"] = { ":%s/# && echo/\\&\\& echo/<CR>", desc = "resume debug message" },
     ["M"] = { ":Mason<cr>" },
-    ["<leader>m"] = { ":Telescope marks<cr>", desc = "select marks" },
+    ["<leader>m"] = { ":Mason<cr>" }, -- M means Alt
+    ["<M-m>"] = { ":Telescope marks<cr>", desc = "select marks" },
     ["<S-Tab>"] = { ":bprev<CR>", desc = "backward file", noremap = true },
     ["<Tab>"] = { ":bnext<CR>", desc = "forward file", noremap = true },
     ["<M-b>"] = { ":Telescope buffers<CR>", desc = "Telescope buffers" },
+    ["<M-e>"] = { ":Neotree<CR>", desc = "jump to neotree" },
   },
   t = {
     -- setting a mapping to false will disable it
